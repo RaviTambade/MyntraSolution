@@ -1,8 +1,8 @@
 
-var Products=require('../Data/Products');
+var Products = require('../Data/Products');
 exports.ProductRepository = class ProductRepository {
     constructor() {
-        this.products = [];
+        this.products = Products;
     }
     addProduct(product) {
         this.products.push(product);
