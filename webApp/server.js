@@ -12,6 +12,16 @@ app.get("/api/hello", function(req, res) {
     
 });
 
+app.get("/api/thankyou", function(req, res) {
+    var thanksgiving  = {
+        happyindex: 100,
+        gitcoupn: "mytnra98989",
+        product: "smarttv"
+    }
+    res.send(thanksgiving);
+    
+});
+
 app.listen(3000, function() {
   console.log("Server is running on port 3000");
 });
