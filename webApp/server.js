@@ -24,6 +24,23 @@ app.get("/api/thankyou", function(req, res) {
     
 });
 
+app.get("/api/shoppingcart",function(req, res) {
+  var cart  = {
+      cartId: 100,
+      items: [{
+        itemId :1,
+        quantity : 300
+      },
+      {
+        itemId :2,
+        quantity : 50
+      }],
+     
+  }
+  res.send(cart);
+  
+})
+
 app.post("/api/addproduct", function (req, res) {
   const data = req.body
   try {
