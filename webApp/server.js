@@ -14,9 +14,6 @@ app.get("/api/hello", function(req, res) {
     
 });
 
-<<<<<<< HEAD
-
-=======
 app.get("/api/thankyou", function(req, res) {
     var thanksgiving  = {
         happyindex: 100,
@@ -47,7 +44,6 @@ app.get("/api/getbyid/:id", function (req, res) {
     console.log(err)
   }
 });
->>>>>>> alpha
 
 app.listen(3000, function() {
   console.log("Server is running on port 3000");
